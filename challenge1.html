@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+         input{
+        
+        padding:10px;
+        width: 90%;
+        margin: 5px 10px 5px;
+        border: solid 1px black;
+        border-radius: 10px;
+        outline: none; 
+    }
+    *{
+        background-color:skyblue;
+        margin:15px 15px;
+        padding: 15px;
+        
+    }
+    .w{
+        background-color: white;
+        border-color: steelblue;
+    }
+    #i{
+        width: 10%;
+        border:none;
+        border-radius: 4px;
+        font-size: 20px;
+    }
+            #i:hover{
+                color:blue;
+            }
+        
+    
+    body{
+        border:1px solid steelblue;
+        border-radius: 4px;
+        font-size: 30px;
+    }
+    .head1{
+        text-align: center;
+    }
+    </style>
+<form>
+    <h1 class="head1">Contact Form</h1>
+    <p  >Please fill the texts in th fields</p>
+    <p >Your Name:</p>
+    <input class="w" type="text" name="Your Name" placeholder="Your Name">
+    <p>
+        Your Email:
+    </p>
+    <input class="w" type="email" name="email" placeholder="Valid Email Address">
+    <p >Message:</p>
+    <textarea class="w" rows ="15" cols="150" placeholder="Your Message to Us">
+    </textarea>
+    <p >Subject:</p>
+    <input class="w" type="text" name="subject" placeholder="Job Inquiry"><br>
+    <br>
+    <div>
+    <input  class="w" id="i" type="submit" name="send" value="Send">
+</div>
+</form>
+</body>
+</html>

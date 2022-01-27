@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        color:purple;
+        font-size: 70px;
+        text-align: center;
+        
+    }
+.main{
+ display: flex;  
+ flex-direction: row; 
+}
+.child{
+    display:flex;
+    flex-direction: column;
+    width:100%
+}
+.nav{
+    background-color:lightpink;
+    width: 200px;
+    height: 1000px;
+    border:1px solid purple;
+    text-shadow:2px 4px hotpink;
+        
+}
+.header,.footer{
+    background-color:lightpink;
+    width: 100%;
+    height:198px;
+    border:1px solid purple;
+    text-shadow:2px 4px hotpink;
+        text-shadow: 4px 4px 4px 4px;
+}
+.article{
+    background-color:lightpink;
+    width:100%;
+    height:600px;
+    border:1px solid purple;
+    text-shadow:2px 4px hotpink;
+        text-shadow: 4px 4px 4px 4px;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="main">
+    <div class="nav">nav</div>
+
+<div class="child">
+    <div class="header">header</div>
+<div class="article">article</div>
+<div class="footer">footer</div>
+</div>
+</div>
+</div>
+</body>
+</html>

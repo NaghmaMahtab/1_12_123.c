@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+ div.container{
+    display:grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 10px;
+}
+div.nested{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 75px 500px 75px ;
+    grid-gap: 10px;
+}
+div.main{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-gap:10px;
+}
+
+div.box{
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+</style>
+<body>
+    
+        <div class="container">
+         <div  class="box "id="nav">nav</div>
+         <div class="nested">
+         <div  class="box" id="header">header</div>
+         <div class="main">
+         <div class="box" id="article">article</div>
+         <div class="box" id="ads">ads</div>
+        </div>
+        <div class="box" id ="footer">footer</div>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>
